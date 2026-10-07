@@ -12,11 +12,16 @@ public class Simple_Calculator {
       int num_1 = scanner.nextInt();
       
       System.out.println("You have entered " + num_1); //Test for input
-      
+                 
       System.out.println("Please enter the second number");
       int num_2 = scanner.nextInt();
       
       System.out.println("You have entered " + num_2);//Test for input
+      
+      System.out.println("Please enter arithmetic symbol: +, -, *, /, or %");
+      char symbol = scanner.next().charAt(0);
+      
+      System.out.println(symbol);
       
       //Stops scanner from potentially taking inputs when unneccesary
       scanner.close();
