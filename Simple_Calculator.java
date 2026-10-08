@@ -18,13 +18,35 @@ public class Simple_Calculator {
       
       System.out.println("You have entered " + num_2);//Test for input
       
-      System.out.println("Please enter arithmetic symbol: +, -, *, /, or %");
-      char symbol = scanner.next().charAt(0);
+      scanner.nextLine(); //Allows the next scanner.nextLine() to work, DON'T TOUCH
       
-      System.out.println(symbol);
+      System.out.println("Please enter arithmetic symbol: +, -, *, /, or %");
+      String s = scanner.nextLine();
+      
+      System.out.println(s);
+      
+      if (s.equals("+")) {// If the entered statement holds one of the symbols, it will excute the one entered
+         System.out.println(num_1 + num_2);
+      }
+      
+      if (s.equals("-")) {
+         System.out.println(num_1 - num_2);
+      }
+      
+      if (s.equals("*")) {
+         System.out.println(num_1 * num_2);
+      }
+      
+      if (s.equals("/")) {
+         System.out.println(num_1 / num_2);
+      }
+      
+      if (s.equals("%")) {
+         System.out.println(num_1 % num_2);
+      }
+
       
       //Stops scanner from potentially taking inputs when unneccesary
       scanner.close();
    }
 }
-      
